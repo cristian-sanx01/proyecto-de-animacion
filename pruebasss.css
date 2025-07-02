@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: green;
+    color: white;
+}
+
+.top-banner {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px; /* Define el tamaño de tu logo aquí */
+    margin-right: 15px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.navbar {
+    background-color: green;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 10px;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px; /* Ajusta el ancho de los productos */
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

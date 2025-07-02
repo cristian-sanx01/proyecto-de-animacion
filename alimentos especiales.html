@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alimento para Mascotas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .definicion {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .definicion img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .producto {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #f1f8e9;
+      padding: 20px;
+      border-left: 6px solid #8bc34a;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+
+    .producto img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+
+    .detalle-producto {
+      flex: 1;
+    }
+
+    .detalle-producto h2 {
+      margin: 0 0 10px;
+      color: #4caf50;
+    }
+
+    .detalle-producto p.precio {
+      font-weight: bold;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+
+    .volver {
+      text-align: center;
+    }
+
+    .volver button {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .volver button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="definicion">
+    <h1>¿Qué es un Alimento para Mascotas?</h1>
+    <p>El alimento para mascotas es una mezcla balanceada de nutrientes diseñada para cubrir las necesidades alimenticias de perros y gatos, ayudando a mantenerlos saludables y activos.</p>
+    <img src="https://example.com/alimento-mascotas.jpg" alt="Alimento para mascotas" />
+  </div>
+
+  <div class="producto">
+    <img src="https://example.com/alimento-producto.jpg" alt="Producto Alimento" />
+    <div class="detalle-producto">
+      <h2>Alimento Premium para Perros</h2>
+      <p class="precio">$24.99</p>
+    </div>
+  </div>
+
+  <div class="volver">
+    <button onclick="window.location.href='index.html'">← Volver al Inicio</button>
+  </div>
+
+</body>
+</html>

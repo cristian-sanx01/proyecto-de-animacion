@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="csa.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="Logo">
+      <img src="logo.jpg" alt="Logo de la tienda" />
+      <span class="nombre-empresa">The pet spot</span>
+    </div>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="index.html">producto</a></li>
+      </ul>
+    </nav>
+
+    <button class="boton-carrito" onclick="toggleCarrito()">Carrito</button>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="bienvenida">
+      <h1>ofertas de comida </h1>
+      <p></p>
+
+      <div class="productos">
+        <div class="producto">
+          <img src="imagenes de los productos/pr1.webp" class="foto-producto" alt="Producto 4" />
+          <h3>Bolsa para Transportar Mascota Negro-S</h3>
+          <p>$24.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr2.webp" class="foto-producto" alt="Producto 5" />
+          <h3>Bolsitas para Desechos Cuatro Colores</h3>
+          <p>$15.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr3.webp" class="foto-producto" alt="Producto 6" />
+          <h3>Peine Para Perros </h3>
+          <p>$8.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicios">
+      <h2>Categoria de perro </h2>
+      <p></p>
+
+      <div class="productos">
+        <div class="producto">
+          <img src="imagenes de los productos/pr4.webp" class="foto-producto" alt="comida" />
+          <h3>casa de perro</h3>
+          <p>$60.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr5.webp" class="foto-producto" alt="comida" />
+          <h3>zàpatos negro para perro</h3>
+          <p>$6.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr6.webp" class="foto-producto" alt="comida" />
+          <h3>Peluche Ave Con Sonido para Gatos</h3>
+          <p>$10.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr7.webp" class="foto-producto" alt="comida" />
+          <h3>Columpio Para Aves</h3>
+          <p>$10.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="servicios">
+      <h2></h2>
+      <p></p>
+
+      <div class="productos">
+        <div class="producto">
+          <img src="imagenes de los productos/pr8.webp" class="foto-producto" alt="Producto 7">
+          <h3>Carrier de Metal con Ruedas</h3>
+          <p>$50.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr9.webp" class="foto-producto" alt="Producto 8">
+          <h3>columpio de ave</h3>
+          <p>$10.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr100.webp" class="foto-producto" alt="Producto 9">
+          <h3>Pecheras para Hamster y Hurones </h3>
+          <p>$10.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr11.webp" class="foto-producto" alt="Producto 10">
+          <h3>Nido Para Aves</h3>
+          <p>$2.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+      </div>
+      
+    </section>
+    <section class="servicios">
+      <h2></h2>
+      <p></p>
+
+      <div class="productos">
+        <div class="producto">
+          <img src="imagenes de los productos/pr12.webp" class="foto-producto" alt="Producto 7">
+          <h3>juguete de perro</h3>
+          <p>$8.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr13.webp" class="foto-producto" alt="Producto 8">
+          <h3>Juguete Guarida</h3>
+          <p>$12.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr14.webp" class="foto-producto" alt="Producto 9">
+          <h3>juguetes para gatos</h3>
+          <p>$4.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes de los productos/pr15.webp" class="foto-producto" alt="Producto 10">
+          <h3>Juguete Para Morder Soda Limón</h3>
+          <p>$9.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+  <div class="carrito" id="carrito">
+    <h2>Carrito</h2>
+    <ul class="lista-carrito" id="lista-carrito">
+      <!-- Productos del carrito -->
+    </ul>
+    <button class="vaciar-carrito" onclick="vaciarCarrito()">Vaciar carrito</button>
+  </div>
+
+  <footer id="pie-pagina">
+    <p>&copy; 2025 Tu Tienda.</p>
+  </footer>
+
+  <script>
+    const carrito = document.getElementById('carrito');
+    const listaCarrito = document.getElementById('lista-carrito');
+
+    function toggleCarrito() {
+      carrito.classList.toggle('activo');
+    }
+
+    function vaciarCarrito() {
+      listaCarrito.innerHTML = '';
+    }
+
+    document.querySelectorAll('.agregar-carrito').forEach(boton => {
+      boton.addEventListener('click', () => {
+        const producto = boton.parentElement;
+        const nombre = producto.querySelector('h3').textContent;
+        const precioElem = producto.querySelector('p');
+        const precio = precioElem ? precioElem.textContent : "Sin precio";
+
+        const item = document.createElement('li');
+        item.textContent = `${nombre} - ${precio}`;
+
+        const eliminarBtn = document.createElement('button');
+        eliminarBtn.textContent = 'X';
+        eliminarBtn.classList.add('eliminar-item');
+        eliminarBtn.onclick = () => item.remove();
+
+        item.appendChild(eliminarBtn);
+        listaCarrito.appendChild(item);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Pet Spot</title>
+  <link rel="stylesheet" href="servico.css" />
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="Logo">
+      <img src="logo.jpg" alt="Logo de la tienda" />
+      <span class="nombre-empresa">The pet spot</span>
+    </div>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+      </ul>
+    </nav>
+    <button class="boton-carrito" onclick="toggleCarrito()">Carrito</button>
+  </header>
+
+  <main>
+    <div class="servicio-imagen-texto">
+      <img src="peluqueria.jpg.png" alt="Servicio de peluquería" />
+      <div class="texto">
+        <h2>Servicios para Mascotas</h2>
+        <p>Ofrecemos baños, peluquería, corte de uñas y atención personalizada para el bienestar y la higiene de tu mascota. Nuestro equipo está capacitado para atender tanto a perros como a gatos con el mayor cuidado y profesionalismo</p>
+      </div>
+    </div>
+
+    <div id="acordeon-container" class="acordeon"></div>
+  </main>
+
+  <div class="carrito" id="carrito">
+    <h2>Carrito</h2>
+    <ul class="lista-carrito" id="lista-carrito"></ul>
+    <button class="vaciar-carrito" onclick="vaciarCarrito()">Vaciar carrito</button>
+  </div>
+
+  <footer id="pie-pagina">
+    <p>&copy; 2025 The Pet Spot.</p>
+  </footer>
+
+  <script src="acordeon.js" defer></script>
+</body>
+</html>

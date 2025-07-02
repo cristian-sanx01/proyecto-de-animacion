@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="Logo">
+      <img src="imagenes/logo.jpg" alt="Logo de la tienda" />
+      <span class="nombre-empresa">The pet spot</span>
+    </div>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="animales1.html">animales</a></li>
+        <li><a href="producto1.html">producto</a></li>
+        <li><a href="acordeon de prueba.html">Servicios</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+        <script src="carrucel.js"></script>
+      </ul>
+    </nav>
+
+    <button class="boton-carrito" onclick="toggleCarrito()">Carrito</button>
+  </header>
+
+  <!-- BUSCADOR -->
+  <div
+    class="buscador"
+    style="
+      max-width: 400px;
+      margin: 20px auto;
+      position: relative;
+    "
+  >
+    <input
+      type="search"
+      id="input-buscar"
+      placeholder="Buscar producto..."
+      style="
+        width: 100%;
+        padding: 12px 40px 12px 16px;
+        border-radius: 25px;
+        border: 2px solid #FFA500;
+        font-size: 1rem;
+        outline: none;
+        color: #333;
+      "
+    />
+    <span
+      style="
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFA500;
+        font-size: 1.2rem;
+        pointer-events: none;
+      "
+      >🔍</span
+    >
+  </div>
+
+  <main id="contenido-principal">
+    <section class="bienvenida">
+      <h1>Bienvenido a nuestra tienda</h1>
+      <p>Ofrecemos los mejores productos para ti</p>
+
+      <div class="productos">
+        <div class="producto">
+          <img src="imagenes/imagen.jpg.png" class="foto-producto" alt="Producto 4" />
+          <h3>alimentos</h3>
+          <a href="alimentos especiales.html">
+            <button>Ir a la otra página</button>
+          </a>
+        </div>
+        <div class="producto">
+          <img src="imagenes/productos.jpg.png" class="foto-producto" alt="Producto 6" />
+          <h3>medicamentos</h3>
+          <a href="medicamentos.html">
+            <button type="button">Ir a la otra página</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicios">
+      <h2>Categorías por mascotas</h2>
+      <p></p>
+
+      <div class="productos">
+        <div class="producto">
+          <img src="imagenes/perro.jpg" class="foto-producto" alt="Producto 7" />
+          <h3>Perro</h3>
+        </div>
+        <div class="producto">
+          <img src="imagenes/gato.jpg" class="foto-producto" alt="Producto 8" />
+          <h3>Gatos</h3>
+        </div>
+        <div class="producto">
+          <img src="imagenes/conejo.jpg" class="foto-producto" alt="Producto 9" />
+          <h3>Pequeñas especies</h3>
+        </div>
+        <div class="producto">
+          <img src="imagenes/pericos.jpg" class="foto-producto" alt="Producto 10" />
+          <h3>Aves</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="noticias">
+      <h2> Noticias y Actualizaciones </h2>
+      <p>Boletines informativos</p>
+      <section class="productos-section">
+        <div class="productos">
+          <div class="producto">
+            <img
+              src="imagenes/imgh.jpg"
+              class="foto-producto"
+              alt="Producto 2"
+            />
+            <h3>tips cuidado de mascotas</h3>
+            <p></p>
+            <a href="tips de mas.html">
+              <button>Ir a la otra página</button>
+            </a>
+          </div>
+          <div class="producto">
+            <img
+              src="imagenes/imgh1.jpg"
+              class="foto-producto"
+              alt="Producto 3"
+            />
+            <h3>Consejos tips de higiene</h3>
+            <p></p>
+            <a href="tips de higiene.html">
+              <button>Ir a la otra página</button>
+            </a>
+          </div>
+          <div class="productos">
+            <div class="producto">
+              <img
+                src="imagenes/Valores-familiares-nina-abrazando-un-perro.webp"
+                class="foto-producto"
+                alt="Producto 2"
+              />
+              <h3>importancia de cuidar una mascota</h3>
+              <p></p>
+              <a href="importancia de tu masc.html">
+                <button>Ir a la otra página</button>
+              </a>
+            </div>
+            <div class="productos">
+              <div class="producto">
+                <img
+                  src="imagenes/imgh.jpg"
+                  class="foto-producto"
+                  alt="Producto 2"
+                />
+                <h3>porque  es importante tener una mascotas</h3>
+                <p></p>
+                <a href="importancia de tener mascotas.html">
+                  <button>Ir a la otra página</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="productos-section">
+      <h2>ofertas del mes</h2>
+      <div class="productos">
+        <div class="producto">
+          <img
+            src="imagenes de los productos/shampo.webp"
+            class="foto-producto"
+            alt="Producto 1"
+          />
+          <h3>Shampoo Dermoxil 250 ML</h3>
+          <p>$10.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img
+            src="imagenes de los productos/entrenamiento.webp"
+            class="foto-producto"
+            alt="Producto 2"
+          />
+          <h3>Pads de Entrenamiento Para Cachorros</h3>
+          <p>$15.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img
+            src="imagenes de los productos/pañales.webp"
+            class="foto-producto"
+            alt="Producto 3"
+          />
+          <h3>Pañales Unisex para Perros </h3>
+          <p>$20.00</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="carrito" id="carrito">
+    <h2>Carrito</h2>
+    <ul class="lista-carrito" id="lista-carrito">
+      <!-- Productos del carrito -->
+    </ul>
+    <button class="vaciar-carrito" onclick="vaciarCarrito()">Vaciar carrito</button>
+  </div>
+
+  <footer id="pie-pagina">
+    <p>&copy; 2025 mi Tienda. Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    const carrito = document.getElementById('carrito');
+    const listaCarrito = document.getElementById('lista-carrito');
+
+    function toggleCarrito() {
+      carrito.classList.toggle('activo');
+    }
+
+    function vaciarCarrito() {
+      listaCarrito.innerHTML = '';
+    }
+
+    document.querySelectorAll('.agregar-carrito').forEach(boton => {
+      boton.addEventListener('click', () => {
+        const producto = boton.parentElement;
+        const nombre = producto.querySelector('h3').textContent;
+        const precioElem = producto.querySelector('p');
+        const precio = precioElem ? precioElem.textContent : "Sin precio";
+
+        const item = document.createElement('li');
+        item.textContent = `${nombre} - ${precio}`;
+
+        const eliminarBtn = document.createElement('button');
+        eliminarBtn.textContent = 'X';
+        eliminarBtn.classList.add('eliminar-item');
+        eliminarBtn.onclick = () => item.remove();
+
+        item.appendChild(eliminarBtn);
+        listaCarrito.appendChild(item);
+      });
+    });
+
+    // Buscador funcional
+    const inputBuscar = document.getElementById('input-buscar');
+
+    inputBuscar.addEventListener('input', () => {
+      const filtro = inputBuscar.value.toLowerCase();
+
+      // Selecciona todos los productos en todas las secciones
+      const productos = document.querySelectorAll('.producto');
+
+      productos.forEach(producto => {
+        const titulo = producto.querySelector('h3');
+        if (titulo) {
+          const texto = titulo.textContent.toLowerCase();
+          producto.style.display = texto.includes(filtro) ? '' : 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

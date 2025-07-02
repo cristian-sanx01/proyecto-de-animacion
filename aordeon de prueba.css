@@ -1,0 +1,263 @@
+/* --- Reset general --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Tipografía general --- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- Encabezado --- */
+.encabezado {
+  background: #FFA500;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  position: relative;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Logo img {
+  height: 60px;
+  object-fit: contain;
+}
+
+.nombre-empresa {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-principal {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu-principal ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-principal a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-principal a:hover {
+  text-decoration: underline;
+}
+
+.boton-carrito {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* --- Presentación de servicio --- */
+.servicio-imagen-texto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.servicio-imagen-texto img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.servicio-imagen-texto .texto {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* --- Acordeón --- */
+.acordeon {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.item {
+  border: 1px solid #f0d676;
+  border-radius: 8px;
+  background-color: #fff7d6;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.titulo {
+  background-color: #fdd835;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #4e3e00;
+  font-size: 1.2rem;
+}
+
+.contenido {
+  display: none;
+  padding: 1rem;
+  background-color: #fffde7;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.item.activo .contenido {
+  display: flex;
+}
+
+.contenido img {
+  width: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.texto h3 {
+  margin-bottom: 0.5rem;
+}
+
+.boton {
+  margin-top: 1rem;
+  background: #FFA500;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background: #e69500;
+}
+
+/* --- Carrito --- */
+.carrito {
+  position: fixed;
+  top: 80px;
+  right: -300px;
+  width: 260px;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.carrito.activo {
+  right: 10px;
+}
+
+.carrito h2 {
+  font-size: 18px;
+  color: #FFA500;
+  margin-bottom: 10px;
+}
+
+.lista-carrito {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-left: 15px;
+}
+
+.eliminar-item {
+  color: red;
+  background: none;
+  border: none;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.vaciar-carrito {
+  background: tomato;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* --- Footer --- */
+#pie-pagina {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-principal ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicio-imagen-texto {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenido img {
+    width: 80%;
+  }
+
+  .carrito {
+    width: 90%;
+    right: -100%;
+  }
+
+  .carrito.activo {
+    right: 5%;
+  }
+}
